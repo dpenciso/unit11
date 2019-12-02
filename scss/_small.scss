@@ -47,9 +47,7 @@ body {
   background-color: $secondaryColor;
 }
 
-.hide {
-  display: none;
-}
+
 
 button {
   height: 50px;
@@ -64,15 +62,18 @@ button:hover {
 nav {
   margin: 0;
   padding: 0;
-  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: $secondaryColor;
   ul {
     margin: 0;
     padding: 0;
-    
   }
   li {
     list-style-type: none;
-    width: 100%;
+    width: 33%;
     display: block;
     float: left;
   }
@@ -91,24 +92,16 @@ nav {
   }
 }
 
+
+
 .grid {
   width: 100%;
   padding: 2%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  .main {
-    grid-column: 1/span 2;
-    margin-bottom: 5%;
-  }
-  .second {
+  .hotel {
     grid-column: 1/span 1;
-    padding-right: 2%;
-    margin-bottom: 5%;
-    }
-  .third {
-    grid-column: 2/span 1;
-    padding-left: 2%;
     margin-bottom: 5%;
   }
 }
@@ -117,50 +110,42 @@ figure {
   width: 100%;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
-.link {
-  text-decoration: none;
+figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: .5);
   color: white;
 }
-
-.caption {
-    text-align: center;
-    }
 
 .pic {
   width: 100%;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem 2%;
-  background-color: $primaryColor;
-  color: white;
-  font-weight: 400;
-  .footGrid{
-    width: 100%;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    .footHead{
-    grid-column: 1/span 1;
-    margin: 0;
-    padding-left: 10%;
-    padding-top: 10%;
-    text-align: left;
-    }
-  .footMenu{
-    grid-column: 1/span 1;
-    margin: 0;
-    padding-left: 10%;
-    text-align: left;
-    }
-  }
-  .footerInfo{
-    margin-top: 5%;
-  }
+.locations {
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+div.below {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div .below span i {
+  float: left;
+  font-size: 1.5rem;
+}
+
+div.below span p {
+  padding-left: 1.6rem;
+}
+
+p {
+  margin: 0;
 }
 
 /* clearfix: force an element not to collapse */
