@@ -1,0 +1,105 @@
+body {
+  margin: auto;
+}
+
+
+
+  nav {
+    // max-width: 80rem;
+    margin: auto;
+    li {
+      width: 10%;
+    }
+  }
+
+  // div.headerWrapper {
+    
+  // }
+
+  header {
+    // max-width: 75rem;
+    margin: auto;
+  } 
+
+
+
+  .grid {
+    width: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    .main {
+      grid-column: 1/span 3;
+      grid-row: 1/span 2;
+      margin-bottom: 5%;
+    }
+    .largeFirst {
+      grid-column: 1/span 1;
+      padding-right: 2%;
+      margin-bottom: 5%;
+      }
+    .largeSecond {
+      grid-column: 2/span 1;
+      padding-left: 2%;
+      margin-bottom: 5%;
+    }
+    .largeThird {
+      grid-column: 3/span 1;
+      padding-left: 2%;
+      margin-bottom: 5%;
+    }
+    .largeFourth {
+      grid-column: 4/span 1;
+      padding-left: 2%;
+      margin-bottom: 5%;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: $primaryColor;
+    color: white;
+    font-weight: 400;
+    .footGrid{
+      width: 100%;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: auto;
+      .footHead{
+      grid-column: 1/span 1;
+      margin: 0;
+      padding-left: 10%;
+      padding-top: 10%;
+      text-align: left;
+      }
+    .footMenu{
+      grid-column: 1/span 1;
+      margin: 0;
+      padding-left: 10%;
+      text-align: left;
+      }
+    }
+    .footerInfo{
+      margin-top: 5%;
+    }
+  }
+
+  main {
+    margin: auto;
+    max-width: 80rem;
+  }
+
+  .largeMain {
+    max-height: 400px;
+  }
+
+  .largePic {
+    max-height: 400px;
+  }
+
+  .attourney {
+    padding: 2%;
+  }

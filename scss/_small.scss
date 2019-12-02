@@ -1,0 +1,171 @@
+/* prevents adjustments of font size when orientatino changes */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* apply a natural box layout model to all elements */
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+//BODY RULES
+body {
+  font-family: $font-family;
+}
+
+// HEADER RULES
+// div.headerWrapper {
+// }
+
+.headerWrapper {
+  background-color: $primaryColor;
+  header {
+  padding: 2%;
+  .logo {
+    max-width: 10%;
+  }
+  h1.companyName {
+  text-shadow: 1px 1px 3px black;
+  margin: 0;
+  color: white;
+  font-weight: $heavyWeight;
+  font-size: 3rem;
+  display: block;
+  }
+  h1.companySlogan {
+  text-shadow: 1px 1px 3px black;
+  margin: 0;
+  color: white;
+  font-weight: $regularWeight;
+  font-size: 2rem;
+  }
+}
+}
+
+
+
+// MAIN RULES
+
+
+.navWrapper {
+  background-color: $secondaryColor;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+}
+
+button:hover {
+  color: white;
+  background-color: $primaryColor;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    
+  }
+  li {
+    list-style-type: none;
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  li.active {
+    background-color: darken($primaryColor, 10%);
+  }
+  a {
+    display: block;
+    padding: .8rem 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: lighten($primaryColor, 10%);
+  }
+}
+
+.grid {
+  width: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  .main {
+    grid-column: 1/span 2;
+    margin-bottom: 5%;
+  }
+  .second {
+    grid-column: 1/span 1;
+    padding-right: 2%;
+    margin-bottom: 5%;
+    }
+  .third {
+    grid-column: 2/span 1;
+    padding-left: 2%;
+    margin-bottom: 5%;
+  }
+}
+
+figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.caption {
+    text-align: center;
+    }
+
+.pic {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 2%;
+  background-color: $primaryColor;
+  color: white;
+  font-weight: 400;
+  .footGrid{
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    .footHead{
+    grid-column: 1/span 1;
+    margin: 0;
+    padding-left: 10%;
+    padding-top: 10%;
+    text-align: left;
+    }
+  .footMenu{
+    grid-column: 1/span 1;
+    margin: 0;
+    padding-left: 10%;
+    text-align: left;
+    }
+  }
+  .footerInfo{
+    margin-top: 5%;
+  }
+}
+
+/* clearfix: force an element not to collapse */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
